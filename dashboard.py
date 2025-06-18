@@ -278,10 +278,54 @@ with st.container():
                 
     """)
 
+
+with st.container():
+    st.markdown("### 🤖 Exemplos de Campanhas Personalizadas com IA")
+    st.markdown("---")
+
+    # Cluster 1
+    st.markdown("#### 📍 Cluster 1: Jovens Universitários da Zona Sul")
+    st.markdown("- **Interesse detectado:** Educação e Emprego")
+    st.info('"Ei, [Nome]! Sabia que o [Candidato] vai dobrar o número de bolsas universitárias na sua região? Quer saber como?"')
+
+    st.markdown("**Campanha Sugerida (Instagram Reels + Ads):**")
+    st.markdown("""
+    - 🎬 Vídeo curto com o candidato em frente a uma faculdade local, falando diretamente sobre propostas para jovens.
+    - 🎯 Segmentação: 18–25 anos, localização Zona Sul, interesse em educação.
+    """)
+
+    st.markdown("---")
+
+    # Cluster 2
+    st.markdown("#### 📍 Cluster 2: Aposentados da Zona Norte")
+    st.markdown("- **Interesse detectado:** Saúde e Segurança")
+    st.info('"Olá, [Nome]! Sabemos o quanto segurança é importante. Veja o plano do [Candidato] para ampliar a patrulha nos bairros da Zona Norte."')
+
+    st.markdown("**Campanha Sugerida (Facebook Feed + Vídeo):**")
+    st.markdown("""
+    - 🎬 Depoimento de um morador + gráfico animado mostrando investimento em segurança.
+    - 🎯 Segmentação: 55+, localização Zona Norte, interesse em saúde e segurança pública.
+    """)
+
+    st.markdown("---")
+
+    # Cluster 3
+    st.markdown("#### 📍 Cluster 3: Mães que interagem com temas de creche e escola")
+    st.markdown("- **Interesse detectado:** Infraestrutura escolar e cuidado infantil")
+    st.info('"Oi, [Nome]! Já viu que o plano do nosso candidato inclui mais 15 creches na sua região? Veja o mapa completo!"')
+
+    st.markdown("**Campanha Sugerida (Stories + Carrossel):**")
+    st.markdown("""
+    - 📷 Imagens de escolas reformadas e depoimentos de outras mães.
+    - 🎯 Segmentação: Mulheres 25–45 anos, com filhos, localização por bairro, palavras-chave "creche", "educação infantil".
+    """)
+
+
 col1, col2 = st.columns([2, 1])
 
 with col1:
-    st.write("**Conecte-se conosco e receba atualizações exclusivas sobre as políticas e ações do Governador Tarcísio de Freitas!**")
+    st
+    st.write("\n**Conecte-se conosco e receba atualizações exclusivas sobre as políticas e ações do Governador Tarcísio de Freitas!**\n")
     
     # Formulário para captação de leads
     with st.form("lead_form"):
@@ -338,6 +382,8 @@ with col2:
     
     ✅ Conteúdo exclusivo
     """)
+
+
 
 # Tabela de dados filtrados
 st.subheader("📋 Dados Detalhados")
