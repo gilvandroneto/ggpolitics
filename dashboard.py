@@ -118,32 +118,10 @@ st.write(f"**{neutras} comentários neutros** representam uma oportunidade signi
 
 col1, col2 = st.columns(2)
 
-with col1:
-    st.subheader("📋 Principais Tópicos Discutidos")
-    if neutral_topics:
-        for i, topic in enumerate(neutral_topics[:5], 1):
-            st.write(f"**{topic}**")
-    else:
-        st.write("Nenhum tópico identificado.")
+# Insights sobre Palavras
+st.subheader("💡 Palavras Mais Frequentes com sua Respectiva Análise de Positivo e Negativo")
+st.image("nuvempalavras.jpg", use_container_width=True, caption="Palavras Mais Frequentes em Comentários Neutros")
 
-with col2:
-    st.subheader("🔤 Palavras Mais Frequentes")
-    if neutral_words:
-        # Criar gráfico de barras para palavras mais frequentes
-        words_df = pd.DataFrame({
-            "Palavra": neutral_words[:10],
-            "Frequência": range(len(neutral_words[:10]), 0, -1)
-        })
-        fig_words = px.bar(
-            words_df,
-            x="Frequência",
-            y="Palavra",
-            orientation="h",
-            title="Top 10 Palavras em Comentários Neutros"
-        )
-        st.plotly_chart(fig_words, use_container_width=True)
-    else:
-        st.write("Nenhuma palavra identificada.")
 
 # Insights sobre neutros
 st.subheader("💡 Insights dos Comentários Neutros")
