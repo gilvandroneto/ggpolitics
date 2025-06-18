@@ -274,8 +274,7 @@ with st.container():
     - 🧩 **Aplicar análise de sentimento e clusterização** para agrupar eleitores em **tribos digitais** com estratégias distintas.
     - 🎯 **Testar campanhas com IA generativa** e adaptar mensagens para diferentes públicos com base em **engajamento e conversão**.
     - 📊 **Analisar o impacto das campanhas** em tempo real, ajustando estratégias conforme necessário.
-                
-                
+                    
     """)
 
 
@@ -324,8 +323,8 @@ with st.container():
 col1, col2 = st.columns([2, 1])
 
 with col1:
-    st
-    st.write("\n**Conecte-se conosco e receba atualizações exclusivas sobre as políticas e ações do Governador Tarcísio de Freitas!**\n")
+    st.write("**Conecte-se conosco e receba atualizações exclusivas sobre as políticas e ações do Governador Tarcísio de Freitas!**")
+    st.write("\n")
     
     # Formulário para captação de leads
     with st.form("lead_form"):
@@ -382,7 +381,6 @@ with col2:
     
     ✅ Conteúdo exclusivo
     """)
-
 
 
 # Tabela de dados filtrados
